@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AgroTryPackV2</string>
+    <string name="inicioSesion">Inicio de Sesión</string>
+    <string name="usuario">Usuario</string>
+    <string name="password">Constraseña</string>
+    <string name="scan">Scan</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="encargado">Encargado:</string>
+    <string name="subtitulo">Agregar Trabajador</string>
+    <string name="btnScan">Scan</string>
+    <string name="newGrupo">+ Grupo</string>
+    <string name="fecha">date</string>
+    <string name="nombreSup">Arturo Escalante</string>
+    <string name="codigo">Codigo</string>
+    <string name="agregar">Agregar</string>
+    <string name="historial">Historial</string>
+
+
+
+</resources>

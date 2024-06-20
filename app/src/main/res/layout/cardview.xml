@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView_trabajador"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor= "@color/zxing_transparent"
+    card_view:cardCornerRadius="30dp"
+    android:elevation="15dp"
+    card_view:contentPadding="5dp"
+    card_view:cardElevation="0dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgTrabajadorCV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@null"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvNombreTrabajadorCV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NombreTrabajador"
+            android:textColor="@color/grisoscuro"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/imgTrabajadorCV"
+            android:layout_alignParentTop="true"
+
+            />
+        <TextView
+            android:id="@+id/tvCodigoTrabajadorCV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CodigoTrabajador"
+            android:textColor="@color/grisoscuro"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/imgTrabajadorCV"
+            android:layout_below="@id/tvNombreTrabajadorCV"
+            />
+
+        <TextView
+            android:id="@+id/tvLaborTrabajadorCV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCodigoTrabajadorCV"
+            android:layout_toEndOf="@id/imgTrabajadorCV"
+            android:text="Labor del Trabajador"
+            android:textColor="@color/grisoscuro"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
