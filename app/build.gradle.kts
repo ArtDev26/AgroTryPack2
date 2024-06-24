@@ -64,6 +64,8 @@ dependencies {
     implementation (libs.retrofit2.converter.gson)
     implementation (libs.androidx.appcompat.v120)
     implementation (libs.kotlin.stdlib)
+    implementation(libs.okhttp)
+
     implementation(libs.androidx.databinding.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
