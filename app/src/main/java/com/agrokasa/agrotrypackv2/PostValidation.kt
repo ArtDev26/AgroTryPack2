@@ -1,16 +1,13 @@
 package com.agrokasa.agrotrypackv2
 
 import android.os.Bundle
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.agrokasa.agrotrypackv2.data.Trabajador
-import com.agrokasa.agrotrypackv2.databinding.ActivityMainBinding
 import com.agrokasa.agrotrypackv2.databinding.ActivityPostValidationBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -67,11 +64,14 @@ class PostValidation : AppCompatActivity() {
     }
 
     private fun updateRecyclerView(numeroGrupo: String, trabajadores: List<Trabajador>) {
-        val adapter = TrabajadorAdapter(trabajadores, numeroGrupo, {
-            // Nuevo Grupo clicked
-        }, {
-            // Historial clicked
-        })
+        val adapter = TrabajadorAdapter(
+            trabajadores,
+            numeroGrupo,
+            onNuevoGrupoClick = {/*Logica al hacer Click*/},
+            onHistorialClick = {/*Logica al hacer Click*/},
+            onCambiarGrupoClick = {trabajador -> /*Logica para cambiar trabajador de grupo*/ },
+            onEliminarClick = {trabajador -> /*Logica para eliminar trabajador de grupo*/ }
+        )
         binding.rvListaTrabajador.layoutManager = LinearLayoutManager(this)
         binding.rvListaTrabajador.adapter = adapter
 
