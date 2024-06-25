@@ -36,9 +36,9 @@ android {
         jvmTarget = "1.8"
     }
 
-    viewBinding{
-        enable = true
-    }
+   buildFeatures {
+       viewBinding = true
+   }
 
     packaging {
         resources {
@@ -65,9 +65,11 @@ dependencies {
     implementation (libs.androidx.appcompat.v120)
     implementation (libs.kotlin.stdlib)
     implementation(libs.okhttp)
-
     implementation(libs.androidx.databinding.compiler)
+    implementation(libs.androidx.recyclerview)
+
     testImplementation(libs.junit)
+
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }

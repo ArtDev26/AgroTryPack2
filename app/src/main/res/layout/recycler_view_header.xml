@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="25dp">
+
+    <TextView
+        android:id="@+id/tvNumeroGrupo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:layout_marginVertical="3dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnNuevoGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newGrupo"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/verde2"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/historial"
+        android:backgroundTint="@color/verde2"
+        android:textSize="15sp"
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+</LinearLayout>

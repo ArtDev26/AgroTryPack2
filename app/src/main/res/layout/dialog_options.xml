@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:backgroundTint="@color/beige">
+
+    <Button
+        android:id="@+id/btnCambiarGrupo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cambioGrupo"
+        android:backgroundTint="@color/verdeClaro"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/eliminar"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/rojoPastel"
+        android:textSize="20sp"
+        android:textColor="@color/gris"
+        android:textStyle="bold"/>
+
+</LinearLayout>

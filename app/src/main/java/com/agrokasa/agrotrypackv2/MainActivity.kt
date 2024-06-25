@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var edtConstrasena: EditText
     private lateinit var btnConfirmar: Button
     private lateinit var btnScan: Button
-    private lateinit var btnSkip: Button
 
     private lateinit var binding: ActivityMainBinding
 
@@ -50,7 +49,6 @@ class MainActivity : AppCompatActivity() {
         edtConstrasena = findViewById(R.id.edtConstraseña)
         btnConfirmar = findViewById(R.id.btnConfirmar)
         btnScan = findViewById(R.id.btnScan)
-        btnSkip = findViewById(R.id.btnSkip)
 
         btnConfirmar.setOnClickListener {
             val username = edtUsuario.text.toString()
@@ -68,12 +66,6 @@ class MainActivity : AppCompatActivity() {
         // BOTON SCAN
         btnScan.setOnClickListener {
             startScan()
-        }
-
-        // BOTON SKIP PARA TEST
-        btnSkip.setOnClickListener {
-            val skip = Intent(this, PostValidation::class.java)
-            startActivity(skip)
         }
     }
 

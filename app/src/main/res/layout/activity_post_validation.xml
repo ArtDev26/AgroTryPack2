@@ -92,57 +92,35 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="3dp"
+            android:backgroundTint="@color/verde2"
             android:text="@string/scan"
-            android:textSize="20sp"
-            android:backgroundTint="@color/verde7"/>
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/LinearLayout4"
-        style="?android:attr/buttonBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginHorizontal="5dp"
-
-        >
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="5dp">
 
         <Button
             android:id="@+id/btnAgregar"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:textColor="@color/white"
             android:text="@string/agregar"
-            android:backgroundTint="@color/verde7"
+            android:backgroundTint="@color/verde8"
             android:layout_marginHorizontal="5dp" />
 
-        <Button
-            android:id="@+id/btnGrupoNuevo"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/verde7"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:text="@string/newGrupo"
-            android:layout_marginHorizontal="5dp" />
 
-        <Button
-            android:id="@+id/btnHistorial"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/verde7"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:text="@string/historial"
-            android:layout_marginHorizontal="5dp"/>
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
